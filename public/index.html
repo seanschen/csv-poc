@@ -29,6 +29,110 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script src="https://cdn.osmos.io/button/embed/v1/OsmosButton.js"></script>
+    <script>
+      Osmos.configure({
+        schema: {
+          fields: [
+            {
+              name: "Email Address",
+              displayName: "Email Address",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Employee ID",
+              displayName: "Employee ID",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Zone",
+              displayName: "Zone",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Industry",
+              displayName: "Industry",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Level",
+              displayName: "Level",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Bonus Target",
+              displayName: "Bonus Target",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Variable Target",
+              displayName: "Variable Target",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Current Rating",
+              displayName: "Current Rating",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Prior Rating",
+              displayName: "Prior Rating",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Salary Note",
+              displayName: "Salary Note",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Race",
+              displayName: "Race",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Gender",
+              displayName: "Gender",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Metadata - Internal ID",
+              displayName: "Metadata - Internal ID",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Metadata - Nickname",
+              displayName: "Metadata - Nickname",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Metadata - Favorite Color",
+              displayName: "Metadata - Favorite Color",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Metadata - Mode of Transport",
+              displayName: "Metadata - Mode of Transport",
+              description: "<Your field description here>"
+            },
+            {
+              name: "Metadata - AM Coffee",
+              displayName: "Metadata - AM Coffee",
+              description: "<Your field description here>"
+            }
+          ]
+        },
+        token: "fruzlmfvv4xbmp5vo4umcvgxobw7mtjadzggjylaxobsrde00",
+        uploadDescription: "<Include a description of your uploader upload here which will be shown to users that click the uploader>",
+        hideUploadSchema: true,
+        hideUploadDescription: true
+      });
+    </script>
+    <div style="margin: 2px; border: 1px solid black; text-align: center; padding: 5px; height: 5%; width: 25%;">
+      <p>Osmos</p>
+      <button class="ftl-button" onclick="Osmos.handleClick('fruzlmfvv4xbmp5vo4umcvgxobw7mtjadzggjylaxobsrde00')">
+        Upload Your Data
+      </button>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
