@@ -24,6 +24,8 @@ function App() {
     const [isPerformanceOpen, setIsPerformanceOpen] = useState(false)
     const [isPayrollOpen, setIsPayrollOpen] = useState(false)
 
+    const clientId = "9bc874db-13b8-46ea-a642-7cafbfc5b6f7";
+    const userJwt = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ";
 
     const onSuccess = (data) => {
         // TODO handle success
@@ -49,13 +51,14 @@ function App() {
                 isOpen={isBenchmarksOpen}
                 onRequestClose={() => setIsBenchmarksOpen(false)}
                 /* required config values */
-                clientId="9bc874db-13b8-46ea-a642-7cafbfc5b6f7"
-                userJwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ"
+                clientId={clientId}
+                userJwt={userJwt}
                 templateKey="benchmarks"
                 /* optional config values */
                 webhookKey="test2"
-                blockImportIfErrors={true}
-                devMode={true}
+                config={{
+                    blockImportIfErrors: true,
+                }}
                 style={oneSchemaStyle}
                 /* handling results */
                 onSuccess={onSuccess}
@@ -71,13 +74,14 @@ function App() {
                 isOpen={isCapTableOpen}
                 onRequestClose={() => setIsCapTableOpen(false)}
                 /* required config values */
-                clientId="9bc874db-13b8-46ea-a642-7cafbfc5b6f7"
-                userJwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ"
+                clientId={clientId}
+                userJwt={userJwt}
                 templateKey="cap_table"
                 /* optional config values */
                 webhookKey="test2"
-                blockImportIfErrors={true}
-                devMode={true}
+                config={{
+                    blockImportIfErrors: true,
+                }}
                 style={oneSchemaStyle}
                 /* handling results */
                 onSuccess={onSuccess}
@@ -93,13 +97,14 @@ function App() {
                 isOpen={isPerformanceOpen}
                 onRequestClose={() => setIsPerformanceOpen(false)}
                 /* required config values */
-                clientId="9bc874db-13b8-46ea-a642-7cafbfc5b6f7"
-                userJwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ"
+                clientId={clientId}
+                userJwt={userJwt}
                 templateKey="performance"
                 /* optional config values */
                 webhookKey="test2"
-                blockImportIfErrors={true}
-                devMode={true}
+                config={{
+                    blockImportIfErrors: true,
+                }}
                 style={oneSchemaStyle}
                 /* handling results */
                 onSuccess={onSuccess}
@@ -115,13 +120,14 @@ function App() {
                 isOpen={isPayrollOpen}
                 onRequestClose={() => setIsPayrollOpen(false)}
                 /* required config values */
-                clientId="9bc874db-13b8-46ea-a642-7cafbfc5b6f7"
-                userJwt="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ"
+                clientId={clientId}
+                userJwt={userJwt}
                 templateKey="employment_data"
                 /* optional config values */
                 webhookKey="test2"
-                blockImportIfErrors={true}
-                devMode={true}
+                config={{
+                    blockImportIfErrors: true,
+                }}
                 style={oneSchemaStyle}
                 /* handling results */
                 onSuccess={onSuccess}
