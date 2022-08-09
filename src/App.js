@@ -112,7 +112,7 @@ function App() {
                 onError={onError}
             />
             <div style={divStyle}>
-                <p>Employment Data (Not Done Yet)</p>
+                <p>Employment Data</p>
                 <button onClick={() => setIsPayrollOpen(false)}>Import</button>
             </div>
             <OneSchemaImporter
