@@ -55,7 +55,7 @@ function App() {
                 userJwt={userJwt}
                 templateKey="benchmarks"
                 /* optional config values */
-                webhookKey="test2"
+                webhookKey="dev"
                 config={{
                     blockImportIfErrors: true,
                 }}
@@ -78,7 +78,7 @@ function App() {
                 userJwt={userJwt}
                 templateKey="cap_table"
                 /* optional config values */
-                webhookKey="test2"
+                webhookKey="dev"
                 config={{
                     blockImportIfErrors: true,
                 }}
@@ -101,7 +101,7 @@ function App() {
                 userJwt={userJwt}
                 templateKey="performance"
                 /* optional config values */
-                webhookKey="test2"
+                webhookKey="dev"
                 config={{
                     blockImportIfErrors: true,
                 }}
@@ -113,7 +113,7 @@ function App() {
             />
             <div style={divStyle}>
                 <p>Employment Data</p>
-                <button onClick={() => setIsPayrollOpen(false)}>Import</button>
+                <button onClick={() => setIsPayrollOpen(true)}>Import</button>
             </div>
             <OneSchemaImporter
                 /* managing state from your application */
@@ -124,7 +124,7 @@ function App() {
                 userJwt={userJwt}
                 templateKey="employment_data"
                 /* optional config values */
-                webhookKey="test2"
+                webhookKey="dev"
                 config={{
                     blockImportIfErrors: true,
                 }}
