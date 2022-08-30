@@ -27,7 +27,7 @@ function App() {
 
     const clientId = "9bc874db-13b8-46ea-a642-7cafbfc5b6f7";
     const userJwt = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ";
-    const webhookKey = 'sean-local';
+    const webhookKey = 'dev';
 
     const onSuccess = (data) => {
         // TODO handle success
