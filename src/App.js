@@ -26,8 +26,8 @@ function App() {
     const [isEmploymentMetadataOpen, setIsEmploymentMetadataOpen] = useState(false)
 
     const clientId = "9bc874db-13b8-46ea-a642-7cafbfc5b6f7";
-    const userJwt = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiPFVTRVJfSUQ-IiwiaXNzIjoiOWJjODc0ZGItMTNiOC00NmVhLWE2NDItN2NhZmJmYzViNmY3In0.ljfztcF94hlz-0xoIJvLCNP5jRz7rFLTaoNC-BvOBoQ";
-    const webhookKey = 'dev';
+    const userJwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5YmM4NzRkYi0xM2I4LTQ2ZWEtYTY0Mi03Y2FmYmZjNWI2ZjciLCJ1c2VyX2lkIjoiYWJjMTIzIiwiY29tcGFueUlkIjoyLCJpYXQiOjE2NjIwMTc1OTUsImV4cCI6MjY2MzAxNzU5NX0.hcddKtI30S7iOzcRjYYMs6KejOpnJ5YDy4mO7__ecSo";
+    const webhookKey = "dev";
 
     const onSuccess = (data) => {
         // TODO handle success
